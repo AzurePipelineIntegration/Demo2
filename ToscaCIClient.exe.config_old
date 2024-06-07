@@ -17,13 +17,13 @@
         <value>300000</value>
       </setting>
       <setting name="WorkspacePath" serializeAs="String">
-       <value></value>
+        <value>F:\Tosca_Projects\Tosca_Workspaces\142_BoQ_Vadiraj\142_BoQ_Vadiraj.tws</value>
       </setting>
       <setting name="LoginName" serializeAs="String">
-        <value></value>
+        <value>Vadiraj</value>
       </setting>
       <setting name="LoginPassword" serializeAs="String">
-        <value></value>
+        <value>123456</value>
       </setting>
       <setting name="TimestampFormat" serializeAs="String">
         <value> yyMMdd HHmm</value>
@@ -43,7 +43,7 @@
         <value>SHA256</value>
       </setting>
       <setting name="PathToResultFile" serializeAs="String">
-        <value>"F:\HomeLoanOrigination\qTestAgent\PEGA_HLO_SIT_DEX_RegressionTest_Result.xml"</value>
+        <value>"F:\HomeLoanOrigination\qTestAgent\PEGA_HLO_SIT_InsprintAutomation_Result.xml"</value>
       </setting>
       <setting name="ConsiderExecutionResult" serializeAs="String">
         <value>True</value>
@@ -55,7 +55,7 @@
         <value>36000000</value>
       </setting>
       <setting name="ReportIntermediateResults" serializeAs="String">
-        <value>True</value>
+        <value>False</value>
       </setting>
       <setting name="PollingInterval" serializeAs="String">
         <value>60000</value>
@@ -131,12 +131,15 @@
       </basicHttpBinding>
     </bindings>
     <client>
-      <!--endpoint address="http://localhost:8732/TOSCARemoteExecutionService/"
+      <endpoint address="http://localhost:8732/TOSCARemoteExecutionService/"
         binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IRemoteExecutionService"
-        contract="ServiceReference1.IRemoteExecutionService" name="BasicHttpBinding_IRemoteExecutionService" /-->
+        contract="ServiceReference1.IRemoteExecutionService" name="BasicHttpBinding_IRemoteExecutionService" />
       <!--endpoint address="http://localhost/DistributionServerService/ManagerService.svc"
         binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IManagerService"
         contract="ManagerService.IManagerService" name="BasicHttpBinding_IManagerService" /-->
+		<!--endpoint address="http://npedctoscacon01.boqdevazure.local:85/TOSCARemoteExecutionService"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IRemoteExecutionService"
+        contract="ServiceReference1.IRemoteExecutionService" name="BasicHttpBinding_IRemoteExecutionService" /-->
       <endpoint address="http://npedctoscacon01.boqdevazure.local:85/DistributionServerService/ManagerService.svc"
         binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IManagerService"
         contract="ManagerService.IManagerService" name="BasicHttpBinding_IManagerService" />
